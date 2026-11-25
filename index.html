@@ -1,93 +1,14 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6edda"><title>雾汀旅店 · 海岸假日</title>
-<style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5ecda;color:#233e34;font-family:"PingFang SC","Microsoft Yahei",sans-serif}body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:8;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' filter='url(%23n)' opacity='.85' d='M0 0h160v160H0z'/%3E%3C/svg%3E")}a{color:inherit;text-decoration:none}button{cursor:pointer;color:inherit;font:inherit}header,.hero,.inner{width:min(91%,1380px);margin:auto}header{display:flex;align-items:center;justify-content:space-between;height:82px;border-bottom:1px solid #59685270}header strong{font:700 23px Georgia,serif;letter-spacing:2px}header strong i{font-style:normal;font-size:32px;vertical-align:middle;color:#ad452c;margin-right:10px}nav{display:flex;align-items:center;gap:34px;font-size:14px}.sound{background:none;border:1px solid #748073;border-radius:100px;padding:8px 15px}.hero{display:grid;grid-template-columns: .85fr 1.15fr;align-items:center;gap:4vw;padding:52px 0 48px;min-height:min(76vh,800px)}.eng,.stamp,.strip,.meta{font:600 12px/1.5 "Courier New",monospace;letter-spacing:2px}.eng{color:#a5472d}.hero h1{font:700 clamp(58px,6.6vw,106px)/1.15 "Songti SC","STSong",serif;letter-spacing:-.055em;margin:25px 0 20px}.hero h1 span{color:#ab492d}.desc{line-height:1.95;color:#4f5e50;margin-bottom:27px}.cta{display:inline-block;background:#24493d;color:#fff6df;padding:14px 24px;border-radius:3px;font-weight:600}.post{margin:0;background:#fff5df;padding:13px;border:1px solid #a69e80;box-shadow:5px 7px 0 #cabfa9;transform:rotate(1.5deg);position:relative}.post canvas{width:100%;display:block}.post figcaption{display:flex;align-items:center;justify-content:space-between;padding:10px 2px 0;font:italic 17px Georgia;color:#3c5749}.stamp{font-style:normal;font-size:10px}.strip{display:flex;justify-content:space-around;gap:20px;padding:13px 3vw;color:#f8ebcc;background:#29493e}.strip span{white-space:nowrap}.rooms{padding:72px 0 90px;background:#e8dfc8}h2{font:700 clamp(37px,4.2vw,68px)/1.25 "Songti SC",serif;margin:12px 0 32px}.rooms article{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;background:#f7f0df;border:1px solid #bcb49d}.roompic{min-width:0;position:relative}.roompic canvas{display:block;width:100%}.details{padding:32px 9%}.details h3{font:700 32px "Songti SC",serif;margin:14px 0}.details p{line-height:1.9}.tabs{display:flex;gap:10px;margin-top:24px}.tabs button,.exit{padding:9px 17px;border:1px solid currentColor;background:none}.tabs button[aria-pressed=true]{background:#29493e;color:#fff0ce}.ledger{padding:95px 0 100px;background:linear-gradient(#70776a,#303c37);color:#f0ead8}.ledger .eng{color:#e8d8ae}.entries{max-width:780px;margin:auto}.entry{border-top:1px solid #d6d4bb55;padding:24px 0;display:grid;grid-template-columns:90px 1fr;line-height:1.8}.entry time{font:16px monospace;color:#d3c4a9}.entry:last-child{color:#eed2b5;transform:rotate(-1deg)}.night{background:#101713;color:#c4c4ad;padding:100px 0 30px;text-align:center}.night .eng{color:#bb8d76}.night p{line-height:1.9}.hall{display:block;width:min(100%,1000px);margin:30px auto 0}.end{height:240vh;position:relative;background:#070907;color:#e0d2bd}.scene{height:100vh;position:sticky;top:0;overflow:hidden;display:grid;place-items:center}.scene canvas{position:absolute;width:100%;height:100%;object-fit:cover}.words{position:absolute;bottom:8%;text-align:center;text-shadow:0 2px 8px #000}.words h2{font-size:clamp(30px,5vw,70px);margin:12px}.exit{display:inline-block;background:#101210bb;color:#dacdb9;margin-top:8px}.exit[hidden]{display:none}@media(max-width:760px){header{height:65px}nav{gap:12px}nav a{display:none}.hero{grid-template-columns:1fr;padding:38px 0;gap:30px}.hero h1{font-size:clamp(57px,12vw,78px);margin:16px 0}.desc{margin-bottom:17px}.post{margin:0 4px}.strip span:nth-child(2){display:none}.strip{font-size:10px;letter-spacing:1px}.rooms article{grid-template-columns:1fr}.rooms,.ledger,.night{padding-top:55px}.details{padding:23px}.entry{grid-template-columns:63px 1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
-<header id="top"><strong><i>☀</i>雾汀旅店</strong><nav><a href="#rooms">海景客房</a><a href="#journal">旅居手记</a><button class="sound" id="sound" aria-pressed="false">♫ 环境音 · 关</button></nav></header>
-<main><section class="hero"><div><div class="eng">WUTING INN &nbsp; / &nbsp; EST. 1978</div><h1>去海边，<br><span>住几天。</span></h1><p class="desc">推开窗，海风会先一步进来。<br>在白礁湾的小旅店，把日子过慢一点。</p><a class="cta" href="#rooms">看看海景客房</a></div><figure class="post"><canvas id="poster" width="1000" height="640" aria-label="复古旅行海报，落日下的白礁湾和红顶旅店"></canvas><figcaption>Greetings from White Reef Bay <span class="stamp">白礁湾 · 海岸明信片</span></figcaption></figure></section>
-<div class="strip"><span>✳ &nbsp; 白礁湾 · 东海岸</span><span>WUTING SEASIDE INN</span><span>海景客房 &nbsp; / &nbsp; 四季营业</span></div>
-<section class="rooms" id="rooms"><div class="inner"><div class="eng">STAY BY THE SEA</div><h2>挑一扇喜欢的窗。</h2><article><div class="roompic"><canvas id="room" width="800" height="470" aria-label="从客房窗户看出去的景色"></canvas></div><div class="details"><div class="meta" id="roomno"></div><h3 id="roomtitle"></h3><p id="roomcopy"></p><div class="tabs" aria-label="选择客房"><button>201</button><button>202</button><button>204</button></div></div></article></div></section>
-<section class="ledger" id="journal"><div class="inner entries"><div class="eng">THE GUESTBOOK</div><h2>枕边的留言簿</h2><div class="entry"><time>18:40</time><div>傍晚在阳台看见了灯塔。老板说，等灯转过三圈，鱼汤就好了。<br>—— 201 房，林女士</div></div><div class="entry"><time>23:16</time><div>隔壁小孩一直在数数。我敲了敲墙，他就从我刚才数到的地方接着数。<br>—— 202 房，陈先生</div></div><div class="entry"><time>03:17</time><div>请把 203 的钥匙拿走。每次我把它放回前台，醒来它又在我嘴里。<br>—— 没有署名</div></div></div></section>
-<section class="night"><div class="inner"><div class="eng">NIGHT DESK &nbsp; / &nbsp; 03:17</div><h2>二楼今晚没有住客。</h2><p>前台接到了三个内线电话。<br>最后一个听筒里，传来翻动这本留言簿的声音。</p><canvas class="hall" id="hall" width="960" height="460" aria-label="昏暗的走廊，尽头的房门开着"></canvas></div></section>
-<section class="end"><div class="scene"><canvas id="face" width="840" height="680" aria-label="黑暗中逐渐逼近的人脸"></canvas><div class="words"><div class="meta">ROOM 203</div><h2 id="last">你忘了拿钥匙。</h2><a class="exit" href="#top" hidden>回到白天</a></div></div></section></main>
-<script>const ctx=id=>document.getElementById(id).getContext('2d');
-let seed=1978;
-function rand(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}
-function poly(c,color,p){c.fillStyle=color;c.beginPath();c.moveTo(...p[0]);p.slice(1).forEach(v=>c.lineTo(...v));c.closePath();c.fill()}
-function box(c,color,x,y,w,h){c.fillStyle=color;c.fillRect(x,y,w,h)}
-function oval(c,color,x,y,rx,ry){c.fillStyle=color;c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fill()}
-function label(c,t,f,color,x,y){c.font=f;c.fillStyle=color;c.fillText(t,x,y)}
-function poster(){
- const c=ctx('poster');box(c,'#e9c988',0,0,1000,640);oval(c,'#e67c43',731,180,85,85);
- for(let i=0;i<70;i++){const x=rand()*1100,y=rand()*285;box(c,'#eed59c',x,y,rand()*70+10,1+rand()*2)}
- poly(c,'#96aaa0',[[0,304],[144,263],[250,279],[340,255],[518,279],[605,267],[740,293],[1000,262],[1000,350],[0,350]]);
- box(c,'#689e99',0,304,1000,336);
- for(let i=0;i<1150;i++){let x=rand()*1000,y=305+rand()*335;box(c,rand()>.45?'#b8cbb0':'#497e7b',x,y,rand()*36+3,rand()*2+1)}
- poly(c,'#eacb95',[[0,355],[110,342],[220,348],[390,362],[540,381],[463,398],[601,402],[654,419],[555,427],[400,424],[282,445],[110,480],[0,520]]);
- poly(c,'#496c59',[[0,320],[120,309],[200,321],[240,317],[391,345],[532,375],[429,383],[322,378],[215,391],[0,440]]);
- // The inn sits above the bay, with a shaded side facing the viewer.
- poly(c,'#e4be80',[[116,249],[282,250],[282,331],[116,311]]);
- poly(c,'#f6dfa6',[[282,250],[331,226],[356,247],[356,320],[282,331]]);
- poly(c,'#ac5235',[[94,248],[138,205],[328,221],[283,258]]);
- poly(c,'#824433',[[281,258],[329,217],[362,246],[353,247],[330,230],[289,263]]);
- for(let i=0;i<7;i++)for(let j=0;j<2;j++)box(c,'#345b55',129+i*21,259+j*29+i*1.2,9,14);
- for(let i=0;i<3;i++)for(let j=0;j<2;j++)box(c,'#385c56',293+i*21,266+j*27-i*3,9,14);
- for(let i=0;i<280;i++){let x=rand()*260-80,y=315+rand()*38;oval(c,rand()>.5?'#355a48':'#587659',x,y,6+rand()*10,6+rand()*8)}
- poly(c,'#305748',[[0,475],[90,452],[219,489],[310,534],[430,558],[566,640],[0,640]]);
- poly(c,'#224b43',[[0,514],[123,508],[240,556],[350,579],[416,640],[0,640]]);
- // Wind-bent maritime pines, cut from the same ink as the foreground.
- for(const [x,y,s] of [[29,490,1.05],[93,495,.6],[-14,460,1.35]]){
- c.save();c.translate(x,y);c.scale(s,s);poly(c,'#283f34',[[0,0],[11,-110],[4,-172],[17,-216],[13,-169],[22,-102],[10,0]]);
- for(let j=0;j<7;j++){let yy=-120-j*15,xx=12+(j%2===0?1:-1)*(39-j*3);poly(c,'#283f34',[[12,yy+36],[xx,yy],[xx+10,yy-4],[15,yy+24]]);for(let k=0;k<14;k++)oval(c,'#304c3c',xx+(rand()-.5)*(85-j*6),yy-rand()*12,9+rand()*13,4+rand()*6)}c.restore()}
- label(c,'WHITE REEF BAY','bold 59px Georgia','#304e41',37,82);label(c,'E A S T   C O A S T   •   S E A S I D E   H O L I D A Y S','17px Georgia','#3b5949',40,117);
- for(let i=0;i<7;i++){let x=555+rand()*400,y=70+rand()*190;c.beginPath();c.moveTo(x-8,y-3);c.quadraticCurveTo(x-2,y-4,x,y+2);c.quadraticCurveTo(x+4,y-4,x+10,y-5);c.strokeStyle='#536858';c.lineWidth=2;c.stroke()}
- for(let i=0;i<18000;i++){box(c,rand()>.5?'#fff4cb27':'#293d3020',rand()*1000,rand()*640,1+rand()*2,1)}
-}poster();
-function drawRoom(i){const c=ctx('room');box(c,['#c5ae83','#9b9880','#44483e'][i],0,0,800,470);
- c.save();c.beginPath();c.rect(150,34,490,334);c.clip();c.drawImage(document.getElementById('poster'),400,125,580,440,150,34,490,334);if(i)box(c,i===1?'#36535155':'#112523da',150,34,490,334);if(i===2){oval(c,'#171c17',491,224,19,28);oval(c,'#171c17',491,305,32,67)}c.restore();
- for(const x of [134,391,636])box(c,'#513f31',x,24,13,357);for(const y of [24,174,368])box(c,'#5f503b',134,y,515,13);
- for(let j=0;j<2;j++){c.save();if(j){c.translate(800,0);c.scale(-1,1)}poly(c,i===2?'#53544a':'#e9d9af',[[52,0],[223,0],[196,68],[155,210],[117,281],[143,419],[42,423]]);for(let k=0;k<6;k++)poly(c,'#483a2723',[[62+k*26,0],[76+k*25,0],[92+k*7,276],[68+k*12,422],[61+k*12,421],[83+k*7,275]]);c.restore()}
- poly(c,'#66513a',[[0,440],[226,390],[800,422],[800,470],[0,470]]);oval(c,'#e2cd9d',556,418,35,7);box(c,'#bfae8d',539,388,27,28);oval(c,'#493f30',552,388,14,4)}
-function corridor(){const c=ctx('hall'),vp=[505,222];box(c,'#4b4e40',0,0,960,460);poly(c,'#20271f',[[0,0],[960,0],vp]);poly(c,'#313129',[[0,460],[960,460],vp]);for(let i=0;i<6;i++){let d=Math.pow(.61,i),e=d*.76;for(let side of [-1,1]){let k=side===1?455:505;poly(c,'#171c18',[[505+side*k*d,222-156*d],[505+side*k*e,222-156*e],[505+side*k*e,222+224*e],[505+side*k*d,222+224*d]]);box(c,'#938268',505+side*k*d*.9,222+30*d,5*d,7*d)}oval(c,'#b6aa76',505,222-205*d,25*d,4*d)}
- box(c,'#0b100d',483,188,44,81);oval(c,'#56604f',506,211,5,7);oval(c,'#141a14',506,242,10,25);const g=c.createRadialGradient(505,222,20,500,230,510);g.addColorStop(0,'#0000');g.addColorStop(1,'#000b');c.fillStyle=g;c.fillRect(0,0,960,460)}corridor();
-</script><script>const rooms=[
- ['听潮大床房','落地窗朝东，清晨可以躺在床上看日出。窗台上备了一副望远镜，天气好时，能看见白礁灯塔。'],
- ['晚风双床房','两张单人床，一盏旧台灯。床头有两枚呼叫铃。夜班前台只接左边那枚。'],
- ['背海单人房','这扇窗在建筑图上朝向山壁。上一位客人退房时，说他看见了自己房间的窗。']
-];
-const buttons=[...document.querySelectorAll('.tabs button')];
-function choose(i){roomno.textContent='ROOM '+buttons[i].textContent;roomtitle.textContent=rooms[i][0];roomcopy.textContent=rooms[i][1];buttons.forEach((b,j)=>b.setAttribute('aria-pressed',i===j));drawRoom(i)}
-buttons.forEach((b,i)=>b.onclick=()=>choose(i));choose(0);
-const face=ctx('face'), w=face.canvas.width,h=face.canvas.height, pixels=face.createImageData(w,h);
-function gauss(x,y,s,t){return Math.exp(-(x*x/(s*s)+y*y/(t*t)))}
-for(let j=0;j<h;j++)for(let i=0;i<w;i++){
- const x=(i-w*.53)/(w*.235), y=(j-h*.45)/(h*.48), a=Math.abs(x), idx=(j*w+i)*4;
- const cr=x*x*(1+.35*Math.max(0,y))+y*y, m= Math.max(0,1-cr);
- let lum=4+rand()*3;
- if(m>0){const eyeY=y+.18+.10*(a-.42), ex=a-.40;
- lum=19+102*Math.sqrt(m)*(.62-.38*x-.21*y)+21*gauss(x+.28,y+.55,.49,.27);
- lum-=65*gauss(ex,eyeY,.25,.13);lum+=19*gauss(ex,eyeY+.14,.24,.048);
- lum+=26*gauss(x+.06,y-.01,.105,.32)-19*gauss(a-.12,y-.11,.05,.19);
- lum-=40*gauss(a-.084,y-.19,.054,.034);
- lum-=32*gauss(a-.59,y-.30,.18,.35);lum+=15*gauss(a-.57,y-.02,.21,.11);
- const mouth=(x/.24)**2+((y-.55+.13*x*x)/.264)**2;
- lum-= Math.min(1,Math.max(0,1.25-mouth)*4)*65;
- if(mouth<.91 && y<.405+.015*Math.cos(x*70))lum+=20+10*Math.cos(x*105);
- if((ex/.182)**2+(eyeY/.048)**2<1){lum=31+22*(1-Math.abs(eyeY)/.05);if(Math.abs(ex+.024)<.047)lum=8;if((ex+.035)**2+(eyeY+.013)**2<.00009)lum=144}
- lum+=(rand()-.5)*16+3*Math.sin(97*x+Math.sin(y*25))*gauss(a-.42,eyeY-.16,.23,.15);
- lum*=Math.min(1,m*15);
- }
- pixels.data[idx]=Math.max(0,lum*1.07);pixels.data[idx+1]=Math.max(0,lum*1.02);pixels.data[idx+2]=Math.max(0,lum*.85);pixels.data[idx+3]=255;
-}face.putImageData(pixels,0,0);
-const end=document.querySelector('.end'),exit=document.querySelector('.exit'),reduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
-let ac,sea,hum,raf=0;
-function update(){raf=0;const rect=end.getBoundingClientRect(),p=Math.min(1,Math.max(0,-rect.top/(end.offsetHeight-innerHeight)));
- face.canvas.style.opacity=.04+.96*p;face.canvas.style.transform='scale('+(reduced?1:.70+1.65*p)+')';
- last.textContent=p>.9?'这次，换你值夜班。':p>.56?'门外的人也在往下看。':'你忘了拿钥匙。';exit.hidden=p<.90;
- if(ac){const dark=Math.min(1,scrollY/Math.max(1,end.offsetTop));sea.gain.setTargetAtTime(.14*(1-dark)+.015,ac.currentTime,.4);hum.gain.setTargetAtTime(dark*.05+p*.035,ac.currentTime,.4)}
-}
-function schedule(){if(!raf)raf=requestAnimationFrame(update)}addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);update();
-sound.onclick=async()=>{if(ac&&ac.state==='running'){await ac.suspend();sound.textContent='♫ 环境音 · 关';sound.setAttribute('aria-pressed',false);return}
- if(!ac){ac=new AudioContext();const buf=ac.createBuffer(1,ac.sampleRate*4,ac.sampleRate),arr=buf.getChannelData(0);let prev=0;for(let i=0;i<arr.length;i++){prev=(prev+.035*(Math.random()*2-1))/1.035;arr[i]=prev*4*(.6-.4*Math.cos(2*Math.PI*i/arr.length))}
- const src=ac.createBufferSource();src.buffer=buf;src.loop=true;sea=ac.createGain();sea.gain.value=.12;src.connect(sea).connect(ac.destination);src.start();hum=ac.createGain();hum.gain.value=0;hum.connect(ac.destination);for(const hz of [48,50.3,73]){const o=ac.createOscillator();o.frequency.value=hz;o.connect(hum);o.start()}}
- await ac.resume();sound.textContent='♫ 环境音 · 开';sound.setAttribute('aria-pressed',true);update()};
-</script></html>
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f2f2e8"><title>栖里社区 · 云门禁</title><link rel="preload" as="image" href="facade.webp"><link rel="stylesheet" href="intercom.css"></head>
+<body><header class="mast"><a href="#home" class="brand"><b class="brandmark" aria-hidden="true"><i></i><i></i><i></i></b><span>栖里社区<small>QILI RESIDENTIAL</small></span></a><nav><a href="#home">社区首页</a><a href="#service">住户服务</a></nav><button class="resident" data-start><span>⌂</span> 我的住户端</button></header>
+<main id="home"><section class="cover"><div class="covercopy"><div class="eyebrow"><i></i> 栖里智慧社区 &nbsp; / &nbsp; 住户服务</div><h1>让回家，<br>安心一点<span>。</span></h1><p>从单元门到家门口，看清每一位来访的人。<br>松柏里三栋可视门禁现已接入。</p><button class="primary" data-start><span class="screenicon"></span>进入住户端</button></div>
+<figure class="coverphoto"><img src="facade.webp" alt="日光照着松柏里的阳台和楼下的香樟"><figcaption><b>松柏里</b><span>SONGBAI RESIDENCES</span></figcaption></figure></section>
+<section id="service" class="services"><div><span class="eyebrow">RESIDENT SERVICES</span><h2>住户服务</h2></div><button data-start><i>⌂</i><span><b>可视对讲</b><small>接听单元门来电</small></span><em>接入</em></button><button data-start><i>▦</i><span><b>公共区域监控</b><small>查看本栋实时画面</small></span><em>查看</em></button></section>
+<section class="runway" id="terminal"><div class="station" id="station" data-stage="0">
+<div class="sysbar"><span class="syslogo">▰ 栖里<span> / 住户终端</span></span><div><button id="audio" aria-pressed="false">声音关</button><button id="quit">退出终端</button></div></div>
+<div class="console"><div class="consolehead"><div><div class="signal"><i></i><span id="signal">单元门来电</span></div><h2 id="channel">一楼门厅</h2></div><div class="address">松柏里 · 3 栋 1 单元<b>住户 604</b></div></div>
+<div class="hardware"><div class="monitor" aria-label="门禁监控画面"><div id="picture" class="picture"></div><div class="glass"></div><div class="snow"></div><div class="knockmark"></div><div class="osd"><span id="cam">CAM 01 · ENTRANCE</span><span id="clock">23:48:06</span></div><div id="caption" class="caption"></div><div class="feedfoot"><span id="feednote">有线传输</span><span class="wave">▂▃▆▂▅▇▂▃</span></div></div>
+<aside><div class="subhead">线路面板</div><div class="line"><i></i><span>单元门</span><b>01</b></div><div class="line"><i></i><span>楼梯间</span><b>02</b></div><div class="line"><i></i><span>六楼猫眼</span><b>03</b></div><div class="line"><i></i><span>室内分机</span><b>04</b></div><div class="subhead loghead">本次呼叫记录</div><ol id="history"></ol></aside></div>
+<div class="controls"><div class="message" aria-live="polite"><span id="source">访客呼叫</span><strong id="prompt">楼下有人在按你的门铃。</strong></div><div id="actions"></div></div>
+<div class="statusfoot"><span id="connection">QILI INTERCOM &nbsp; / &nbsp; 内线 0604</span><span id="stepinfo">向下滚动或操作面板</span></div></div></div></section></main>
+<script src="intercom.js" defer></script></body></html>
